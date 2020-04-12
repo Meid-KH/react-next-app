@@ -1,7 +1,19 @@
-.class {
-  background-color: red;
-  &__title {
-    background-color: #000;
-    color: #fff;
-  }
+@import "partial/variables.scss";
+@import "partial/base.scss";
+$gutter: 30px/ 2;
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+  // max-width: calc(1440px + 141px + 37px);
+}
+.wrapper {
+  max-width: 1440px;
+  margin-left: $gutter;
+  margin-right: $gutter;
+  width: 100%;
+}
+.playlist {
 }

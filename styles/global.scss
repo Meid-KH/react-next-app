@@ -1,3 +1,22 @@
-// .test_class {
-//   background-color: red;
-// }
+// FONT : MONTSERRAT
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@import "partial/normalise.scss";
+@import "partial/variables.scss";
+
+body {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: normal;
+  background-color: $bgColor;
+  overflow-x: hidden;
+  color: $primary;
+  min-height: 100vh;
+}
+h1 {
+  margin-bottom: 36px;
+  font-size: 29px;
+  line-height: 35px;
+  color: $txt;
+  font-weight: normal;
+}

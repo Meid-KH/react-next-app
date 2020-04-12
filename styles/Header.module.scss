@@ -1,0 +1,57 @@
+@import "partial/variables.scss";
+@import "partial/base.scss";
+.header {
+  background: $secondary;
+  margin-bottom: 45px;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    letter-spacing: 0.2px;
+    position: relative;
+    svg {
+      width: 32.48px;
+      height: 31.5px;
+    }
+    span {
+      margin-top: 10px;
+    }
+    .badge {
+      min-width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      font-size: 10px;
+      line-height: 11px;
+      color: #fff;
+      background-color: #ff6161;
+      position: absolute;
+      right: 34px;
+      top: -3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: inherit;
+    }
+  }
+  .header_inner {
+    padding: 15px 0;
+    max-height: 84px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-family: $montserrat;
+      padding: 0 15px 0 0;
+      font-weight: 600;
+      color: $txt;
+    }
+  }
+  .menu_nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

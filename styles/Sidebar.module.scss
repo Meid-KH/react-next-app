@@ -1,0 +1,35 @@
+@import "partial/variables.scss";
+$gutter: 30px/ 2;
+
+.sidebar {
+  width: 375px;
+  flex-shrink: 0;
+  max-width: 100%;
+  background-color: #fff;
+  margin-left: $gutter;
+  margin-right: $gutter;
+  .title {
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    padding: 15px 15px;
+    border-bottom: 1px solid $grey;
+    color: $txt;
+    position: relative;
+  }
+  .download_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar_inner {
+    padding: 20px 20px;
+  }
+}
