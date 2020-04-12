@@ -49,11 +49,10 @@ const Home = () => (
             </ul>
           </div>
         </div>
+        <Footer />
       </section>
       <Sidebar />
     </main>
-
-    <Footer />
   </div>
 );
 
