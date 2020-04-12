@@ -1,5 +1,7 @@
 @import "partial/variables.scss";
 @import "partial/base.scss";
+@import "partial/_mixins.scss";
+
 .header {
   background: $secondary;
   margin-bottom: 45px;
@@ -11,6 +13,9 @@
     padding: 0 15px;
     letter-spacing: 0.2px;
     position: relative;
+    @include max_lg {
+      padding: 0 12px;
+    }
     svg {
       width: 32.48px;
       height: 31.5px;
@@ -37,7 +42,13 @@
   }
   .header_inner {
     padding: 15px 0;
-    max-height: 84px;
+    @include min_xl {
+      max-height: 84px;
+    }
+    @include max_sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     line-height: 1;
     display: flex;
     align-items: center;
@@ -45,12 +56,21 @@
     .logo {
       font-family: $montserrat;
       padding: 0 15px 0 0;
+      @include max_sm {
+        padding: 0 15px;
+      }
       font-weight: 600;
       color: $txt;
     }
   }
   .menu_nav {
-    width: 50%;
+    @include min_xl {
+      width: 50%;
+    }
+    @include max_sm {
+      width: 100%;
+      margin-top: 30px;
+    }
     display: flex;
     justify-content: space-between;
   }

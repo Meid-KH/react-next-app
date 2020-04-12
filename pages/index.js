@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Icon from "../components/Icon";
-import css from "../styles/PageOne.module.scss";
+import css from "../styles/Page.module.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";

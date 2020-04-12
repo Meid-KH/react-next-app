@@ -1,0 +1,54 @@
+@import "partial/variables.scss";
+@import "partial/base.scss";
+@import "partial/_mixins.scss";
+$gutter: 30px/ 2;
+.page_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main {
+  @include min_lg {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+  }
+  // max-width: calc(1440px + 141px + 37px);
+}
+.wrapper {
+  max-width: 1440px;
+  @include min_lg {
+    margin-left: $gutter;
+    margin-right: $gutter;
+  }
+  width: 100%;
+}
+.page2 {
+  padding: 20px;
+  p {
+    color: $txt;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  ul {
+    li {
+      a {
+        background-color: #fff;
+        border-radius: 2px;
+        font-size: 15px;
+        font-weight: 600;
+        color: $txt;
+        padding: 10px 010px;
+        margin: 15px 0;
+        display: block;
+      }
+    }
+  }
+}
+.playlist {
+  @include min_xl {
+    width: 50%;
+  }
+}

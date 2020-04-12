@@ -1,4 +1,5 @@
 @import "partial/variables.scss";
+@import "partial/_mixins.scss";
 
 .play_item {
   padding: 26px 0;
@@ -6,8 +7,16 @@
   display: flex;
   cursor: pointer;
   border-bottom: 1px solid #fff;
+  position: relative;
   &[data-options] {
     border-bottom: 1px solid lighten($secondary, 10%);
+  }
+  .button_option {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 10px 10px;
+    margin: 0 -10px;
   }
   .thumb {
     flex-shrink: 0;
@@ -46,10 +55,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include max_sm {
+        margin-top: 15px;
+        flex-wrap: wrap;
+      }
       .play_actions {
         display: flex;
         align-items: center;
         margin: 0 -18px;
+        @include max_sm {
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
         .action {
           margin: 0 18px;
           color: transparent;
@@ -62,6 +79,9 @@
       }
       .pregress_bar {
         width: 130px;
+        @include max_sm {
+          width: 100%;
+        }
         height: 5px;
         border-radius: 56px;
         background-color: #fff;

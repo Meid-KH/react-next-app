@@ -1,5 +1,5 @@
 import React from "react";
-import css from "../styles/PageOne.module.scss";
+import css from "../styles/Footer.module.scss";
 
 export default function Footer() {
   return (

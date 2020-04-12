@@ -17,6 +17,11 @@ class PlayItem extends Component {
 
     return (
       <li className={css.play_item} data-options={options}>
+        {options && (
+          <button className={css.button_option}>
+            <Icon name="options" />
+          </button>
+        )}
         <div className={css.thumb}>
           <img src="./playlist-2.png" alt="JRE MMA Show #75 with Dan Hardy" />
         </div>

@@ -1,14 +1,21 @@
 @import "partial/variables.scss";
+@import "partial/_mixins.scss";
+
 $gutter: 30px/ 2;
 
 .sidebar {
-  width: 375px;
+  @include min_lg {
+    width: 375px;
+    margin-right: $gutter;
+    margin-left: $gutter;
+  }
+  @include max_lg {
+    margin-top: 20px;
+  }
   min-height: 667px;
   flex-shrink: 0;
   max-width: 100%;
-  background-color: #fff;
-  margin-left: $gutter;
-  margin-right: $gutter;
+  background-color: #ffffff;
   .title {
     font-family: $montserrat;
     font-size: 15px;
@@ -16,6 +23,7 @@ $gutter: 30px/ 2;
     line-height: 18px;
     text-align: center;
     padding: 15px 15px;
+    min-height: 52px;
     border-bottom: 1px solid $grey;
     color: $txt;
     position: relative;
