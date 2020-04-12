@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 import Icon from "../components/Icon";
 
@@ -9,6 +10,12 @@ class Header extends Component {
   render() {
     return (
       <header className={css.header}>
+        <Head>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <div className={css.container}>
           <div className={css.header_inner}>
             <Link href="/inner-page">

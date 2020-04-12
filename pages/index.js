@@ -11,7 +11,7 @@ import PlayItem from "../components/PlayItem";
 const Home = () => (
   <div className={css.page_wrapper}>
     <Head>
-      <title>Create Next App</title>
+      <title>Homepage</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 

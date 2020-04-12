@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Head from "next/head";
 import Link from "next/link";
 
 import css from "../styles/Page.module.scss";
@@ -7,6 +8,10 @@ class InnerPage extends Component {
   render() {
     return (
       <div className={css.page2}>
+        <Head>
+          <title>Page Two</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <h1>Here is Page 2</h1>
         <p>
           This is page 2 description. This is page 2 description. This is page 2
