@@ -1,0 +1,11 @@
+@import "partial/variables.scss";
+@import "partial/base.scss";
+
+footer {
+  padding: 48px 0;
+  p {
+    font-size: 19px;
+    line-height: 23px;
+    color: $grey;
+  }
+}

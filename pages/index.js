@@ -4,11 +4,12 @@ import Link from "next/link";
 import Icon from "../components/Icon";
 import css from "../styles/PageOne.module.scss";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import PlayItem from "../components/PlayItem";
 
 const Home = () => (
-  <div>
+  <div className={css.page_wrapper}>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -52,7 +53,7 @@ const Home = () => (
       <Sidebar />
     </main>
 
-    <footer> </footer>
+    <Footer />
   </div>
 );
 
